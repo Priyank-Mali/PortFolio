@@ -7,63 +7,13 @@
     <title>
         {% block title %}{% endblock %}
     </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        ul{
-            list-style: none;
-        }
-        a{
-            text-decoration: none;
-            color:#8892b0;
-        }
-        a:hover{
-            color: #64ffda;;
-        }
-        body{
-            background-color: #0a192f;
-        }
-        .green{
-            color: #64ffda;
-        }
-        .btnlogo{
-            clip-path: polygon(50% 0, 100% 25%, 100% 79%, 52% 100%, 1% 77%, 0 27%);
-            border: 1px solid #64ffda;
-            background-color: transparent;
-
-        }
-        .btn{
-            background-color: transparent;
-            border: 1px solid #64ffda;
-            color: #64ffda;
-            transition: 0.4s all;
-        }
-        .btn:hover{
-            background-color: transparent;
-            transform: translate(-4px,-6px);
-            box-shadow: 2px 2px 2px #64ffda;
-            color: #64ffda;
-        }
+       
     </style>
 </head>
 <body>
     
-    <div class="container">
-        <nav class="d-flex justify-content-between mt-5">
-            <div>
-                <button class="green btnlogo p-2">PM</button>
-            </div>
-            <div>
-                <ul class="d-flex align-items-center">
-                    <li class="pe-4 fs-5"><a href=""><pre class="green">01. <span class="text text-secondary">About</span></pre></a></li>
-                    <li class="pe-4 fs-5"><a href=""><pre class="green">02. <span class="text text-secondary">Experience</span></pre></a></li>
-                    <li class="pe-4 fs-5"><a href=""><pre class="green">03. <span class="text text-secondary">Work</span></pre></a></li>
-                    <li class="pe-4 fs-5"><a href=""><pre class="green">04. <span class="text text-secondary">Contact</span></pre> </a></li>
-                    <li class="ps-5"><a href="" class="btn green">Resume</a></li>
-                </ul>
-            </div>
-        </nav>
         {% block content %}{% endblock %}
-    </div>
    
 </body>
 </html>
