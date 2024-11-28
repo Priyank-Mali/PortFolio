@@ -1,10 +1,121 @@
 {% extends 'myapp/layout.html' %}
 
-{% block title %}
-    Priyank Mali
-{% endblock %}
-
 
 {% block content %}
-    
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="nav-logo">
+                    <h1>PM</h1>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="#about"><span>01.</span>About</a></li>
+                        <!-- <li><a href=""><span>02.</span>Experience</a></li> -->
+                        <li><a href=""><span>02.</span>Work</a></li>
+                        <li><a href=""><span>03.</span>Contact</a></li>
+                    </ul>
+                    <div>
+                        <button class="btn">Resume</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="herosection">
+        <div class="container">
+            <p>Hi, My Name is</p>
+            <h1>Priyank Mali.</h1>
+            <h2>I build things for Web.</h2>
+            <p>Languages and Framework I know : </p>
+            <div class="technology">
+                <div>    
+                    <img src="../../static/images/python.png" alt="">
+                </div>
+                <div>
+                    <img src="../../static/images/django100.png" alt="">
+                </div>
+                <div>
+                    <img src="../../static/images/html.png" alt="">
+                </div>
+                <div>
+                    <img src="../../static/images/css.png" alt="">
+                </div>
+                <div>
+                    <img src="../../static/images/js.png" alt="">
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <h1><span>01.</span> About Me </h1>
+
+            <div class="about-me">
+                <div class="about-text">
+                    <p>
+                        Hi, I'm Priyank Mali, a mechanical engineer who discovered a passion for web development in early 2024. While transitioning to this field was challenging, I embraced the opportunity to learn coding with determination. Guided by my mentors and teachers, and through countless hours of exploring tutorials, I have built a strong foundation in full-stack development.
+                    </p>
+                    <p>
+                        I am using Python, Django for user-friendly and innovative web applications and am actively learning <span>front-end development</span> to enhance my skill set further.
+                    </p>
+                    <p>
+                        Currently, I’m focusing on:
+                    </p>
+                    <ul>
+                        <li><span><i class="fa-solid fa-bolt"></i></span><span>JavaScript,</span> including the Document Object Model <span>(DOM)</span>, to create dynamic and interactive user experiences.</li>
+                        <li><span><i class="fa-solid fa-bolt"></i></span>Django Rest Framework (DRF)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="work">
+        <div class="container">
+            <h1><span>03. </span>Some Things I've Built</h1>
+            <div class="projects">
+                <div class="project-image">
+                    <img src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-600nw-2212935531.jpg" alt="">
+                </div>
+                <div class="projects-text">
+                    <h3>Feaatured Project</h3>
+                    <h1>Halcyon Theme</h1>
+                    <p>
+                        A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                    </p>
+                    <p>VS Code Python Django Bootstarp</p>
+                </div>
+            </div>
+            <div class="projects second">
+                <div class="project-image">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="">
+                </div>
+                <div class="projects-text">
+                    <h3>Feaatured Project</h3>
+                    <h1>Spotify Profile</h1>
+                    <p>
+                        A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                    </p>
+                    <p>VS Code Python Django Bootstarp</p>
+                </div>
+            </div>
+            <div class="projects third">
+                <div class="project-image">
+                    <img src="https://media.istockphoto.com/id/157681198/photo/dandelion-seed.jpg?s=612x612&w=0&k=20&c=TfhCtc_Y1oSpdlL7o6yo7BTfgnD0RCy6yF1SgvQO0Jk=" alt="">
+                </div>
+                <div class="projects-text">
+                    <h3>Feaatured Project</h3>
+                    <h1>Build a Spotify Connected App</h1>
+                    <p>
+                        A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                    </p>
+                    <p>VS Code Python Django Bootstarp</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

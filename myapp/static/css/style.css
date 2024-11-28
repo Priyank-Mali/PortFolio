@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-darknavy: #0a192f;
+  --bg-lightnavy: #233554;
+  --bg-darkestnavy: #112240;
+  --fs-green: #64ffda;
+  --fs-whitegray: #ccd6f6;
+  --fs-lightwhitegray: #8892b0;
+}
+
+body {
+  background-color: var(--bg-darknavy);
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+span {
+  color: var(--fs-green);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  padding: 10px 14px;
+  background-color: transparent;
+  color: var(--fs-green);
+  border: none;
+  border: 1px solid var(--fs-green);
+  border-radius: 4px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 5px 4px var(--fs-green);
+  transform: translate(-4px, -4px);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-logo {
+  height: 70px;
+  width: 70px;
+  border: 1px solid var(--fs-green);
+  color: var(--fs-green);
+  display: grid;
+  place-content: center;
+  border-radius: 60px 10px 60px 10px;
+}
+.navbar .nav-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar .nav-list ul {
+  display: flex;
+  gap: 20px;
+}
+.navbar .nav-list ul li a {
+  font-size: 16px;
+  color: var(--fs-whitegray);
+}
+.navbar .nav-list ul li a:hover {
+  color: var(--fs-green);
+}
+
+.herosection {
+  padding: 40px 30px;
+  color: var(--fs-whitegray);
+  font-family: Verdana !important;
+}
+.herosection .container p {
+  color: var(--fs-green);
+  font-size: 20px;
+  margin-top: 10px;
+}
+.herosection .container h1 {
+  font-size: 5rem;
+}
+.herosection .container h2 {
+  font-size: 4.8rem;
+  color: var(--fs-lightwhitegray);
+}
+.herosection .container .technology {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.herosection .container .technology div {
+  width: fit-content;
+  width: 100%;
+  text-align: center;
+}
+.herosection .container .technology div img {
+  width: 100px;
+}
+
+.about {
+  margin: 120px 0;
+  color: var(--fs-lightwhitegray);
+}
+.about .container {
+  padding: 0 30px;
+}
+.about .container h1 {
+  width: fit-content;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--fs-green);
+  transition: 0.6s all;
+}
+.about .container h1:hover {
+  color: var(--fs-green);
+}
+.about .container .about-me {
+  margin: 30px 30px;
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+.about .container .about-me .about-text p {
+  margin: 17px 0;
+}
+.about .container .about-me .about-text p:nth-child(1) {
+  text-indent: 100px;
+}
+.about .container .about-me .about-text ul li {
+  margin: 10px 0;
+}
+.about .container .about-me .about-text ul li span {
+  margin-right: 12px;
+}
+
+.work {
+  margin-top: 100px;
+  color: var(--fs-lightwhitegray);
+}
+.work .container {
+  padding: 0 30px;
+}
+.work .container h1:first-child {
+  width: fit-content;
+  border-bottom: 1px solid var(--fs-green);
+  transition: 0.6s all;
+}
+.work .container h1:first-child:hover {
+  color: var(--fs-green);
+}
+.work .container .projects {
+  margin: 30px 30px;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.work .container .projects .project-image {
+  flex: 1;
+}
+.work .container .projects .projects-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 20px;
+  color: var(--fs-whitegray);
+  order: 2;
+}
+.work .container .projects .projects-text h3 {
+  font-size: 18px;
+  color: var(--fs-green);
+}
+.work .container .projects .projects-text h1 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+.work .container .projects .projects-text p {
+  font-size: 17px;
+}
+.work .container .projects .projects-text p:nth-child(3) {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: var(--fs-lightwhitegray);
+  background-color: var(--bg-darkestnavy);
+}
+.work .container .second {
+  flex-direction: row-reverse;
+}
+.work .container .second .projects-text {
+  align-items: flex-start;
+}
+.work .container .third {
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=style.css.map */
