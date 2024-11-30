@@ -241,6 +241,9 @@ nav .navbar .nav-list .sidebarbtn {
   }
 }
 
+.container .about {
+  padding: 0 30px;
+}
 .container .about h1 {
   width: -moz-fit-content;
   width: fit-content;
