@@ -353,6 +353,15 @@ nav .navbar .nav-list .sidebarbtn {
   color: var(--fs-lightwhitegray);
   background-color: var(--bg-darkestnavy);
 }
+.container .work .projects .projects-text p:nth-child(3) ul {
+  width: 100%;
+}
+.container .work .projects .projects-text a {
+  margin: 30px 20px;
+}
+.container .work .projects .projects-text a:active {
+  scale: 0.9;
+}
 .container .work .second {
   flex-direction: row-reverse;
 }

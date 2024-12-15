@@ -370,7 +370,16 @@ nav{
                         margin: 10px 0;
                         color: var(--fs-lightwhitegray);
                         background-color: var(--bg-darkestnavy);
+                        ul{
+                            width: 100%;
+                        }
                     }
+                }
+                a{
+                    margin: 30px 20px;
+                   &:active{
+                    scale: 0.9;
+                   }
                 }
             }
         }
